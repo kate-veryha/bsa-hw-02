@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+* {
+    margin: 0;
+    padding: 0;
+    color:teal;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    position: relative;
+    width: 100%;
+    text-align: end;
+}
+
+section.first h1 {
+    position: absolute;
+    padding: 20px;
+    top: 75vh;
+    width: 45%;
+    background-color: rgba(256,256,256,0.7);
+    color: darkslategray;
+    float: right;
+}
+
+section.first img {
+    transform: scale(-1, 1);
+}
+
+section.next {
+    padding: 2vw;
+}
+
+aside {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: teal;
+    margin-top: 7vh;
+}
+
+aside ul li {
+    color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: palegoldenrod;
+    color: darkslategray;
+    top: 0;
+    position: fixed;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    z-index: 10;
+}
+
+header ul {
+    display: flex;
+
+
+    top: 7vh;
+}
+header ul li {
+    display: block;
+    padding: 0 15px;
+    font-weight: bold;
+}
+
+#book-now-button {
+    display: inline-block;
+    background-color: palegoldenrod;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+iframe {
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(239,236,202);
+    color: darkslategray;
+    height: 5%;
+    padding: 10px 0;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+}
+
+.main-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    margin-top: 7vh;
+}
+
+.img-container {
+    width: 45%;
+}
+
+.text-container {
+    width: 55%;
+    padding: 1vw;
+}
+
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw;
+}
+
+.blue {
+    background-color: rgba(126,206,253, 0.4);
+}
+
+.side-menu-ico {
+    display: block;
+    width: 2vw;
+}
+
+a.side-menu {
+    display: block;
+    color: blanchedalmond;
+    padding: 0 1vw;
+}
