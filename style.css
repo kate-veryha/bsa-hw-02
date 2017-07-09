@@ -8,13 +8,9 @@
     box-sizing: border-box;
 }
 
-h1 {
-    position: relative;
-    width: 100%;
-    text-align: end;
-}
 
 section.first h1 {
+    text-align: end;
     position: absolute;
     padding: 20px;
     top: 75vh;
@@ -110,6 +106,10 @@ header ul li {
     display: block;
     padding: 0 15px;
     font-weight: bold;
+}
+
+.menu-ico-hidden {
+    display: none;
 }
 
 #book-now-button {
@@ -210,4 +210,75 @@ input#search {
     width: 85%;
     border: none;
     display: inline-block;
+}
+
+@media screen and (min-width : 320px) and (max-width : 768px) {
+    header {
+      width: 15%;
+    }
+
+    header ul {
+        display: none;
+    }
+    aside {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 7vh;
+    }
+
+    a.side-menu {
+        display: none;
+    }
+
+    a#book-now-button {
+        display: none;
+    }
+
+    .menu-ico-hidden {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
+
+    img.side-menu-ico {
+        width: 80%;
+        display: block;
+        margin-top: 10px;
+    }
+    .main-container {
+        width: 85%;
+        margin-top: 0;
+    }
+
+    .text-container p {
+        text-overflow: ellipsis;
+    }
+
+    section.first h1 {
+        top: 10vh;
+        padding: 10px;
+        width: 45%;
+        animation: none;
+    }
+    .sub-section .img-container {
+        order:2;
+        width: 100%;
+    }
+
+    .sub-section .text-container {
+        order: 1;
+        width: 100%;
+    }
+
+    footer {
+        height: 7%;
+        font-size: 0.7em;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1200px) {
+
 }
