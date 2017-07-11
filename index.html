@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Hotel </title>
 </head>
 <body>
     <header>
-        <a href="#" class="menu-ico-hidden"><img src="images/menu-ico.png"></a>
+        <a href="#" class="menu-ico-active hidden" onclick="smallMenuClickHandler()"><img src="images/menu-ico.png"></a>
+        <a href="#" class="hidden" id="close-button" onclick="closeMenuClickHandler()"><img src="images/cancel.png"></a>
         <ul>
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
@@ -90,5 +91,6 @@
     <footer>
         BlaBlaBla.com &copy; All rights reserved.
     </footer>
+    <script src="dropdown.js"></script>
 </body>
 </html>
