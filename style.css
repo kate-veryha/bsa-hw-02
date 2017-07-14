@@ -71,12 +71,12 @@ header {
   color: darkslategray;
   top: 0;
   position: fixed;
-  align-items: center;
   justify-content: flex-end;
   display: flex;
   z-index: 10; }
   header ul {
     display: flex;
+    align-items: center;
     top: 7vh; }
     header ul li {
       display: block;
@@ -154,6 +154,8 @@ a.side-menu:hover, header ul li a:hover {
 
 .search-container {
   background-color: white;
+  display: flex;
+  align-items: center;
   width: 300px;
   height: 3vh;
   border-radius: 5px; }
@@ -209,9 +211,9 @@ input#search {
     display: none; }
 
   .menu-ico-active {
-    display: block;
-    width: 60%;
-    margin: auto; }
+    display: flex;
+    align-items: center;
+    width: 60%; }
 
   header ul {
     display: none; }
@@ -251,5 +253,23 @@ input#search {
     height: 5%;
     font-size: 0.7em;
     text-align: center; } }
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  header {
+    height: 5vh;
+    font-size: 1.2em; }
+
+  aside {
+    margin-top: 5vh; }
+    aside ul li img.side-menu-ico {
+      display: none; }
+
+  .main-container {
+    margin-top: 5vh; }
+
+  input#search {
+    font-size: 1em; }
+
+  .search-container img {
+    width: 7%; } }
 
 /*# sourceMappingURL=style.css.map */
